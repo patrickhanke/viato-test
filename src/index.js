@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './styles/index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import BookingContextProvider from './provider/booking-context-provider';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BookingContextProvider>
+      <App />
+    </BookingContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

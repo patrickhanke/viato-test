@@ -1,0 +1,103 @@
+@import './global.scss';
+
+.maincontainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  text-align: center;
+  background-color: $lightgrey;
+  width: auto;
+  height: auto;
+  border: 1px solid $grey;
+  
+  .header {
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid $grey;
+    font-size: 22px;
+    .subnav {
+      margin-bottom: 0;
+    }
+  }
+  .button {
+    background-color: $primary-color;
+  }
+  .content {
+    padding: 100px;
+    
+    background-color: $background-color;
+    .contentcontainer {
+      min-width: 960px;
+      height: 600px;
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: space-between;
+      position: relative;
+      background-color: $secondary-color;
+      .leftcontainer {
+        position: relative;
+        flex: 0 1 100%;
+      }
+      .rightcontainer {
+        background-color: $white;
+        width: 300px;
+        position: relative;
+        width: 300px;
+      }
+
+    }
+  }
+}
+h1{
+  font-family: Montserrat, 'Sans-Serif';
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 0;
+  color: $darkgrey;
+}
+h2{
+  font-family: Montserrat, 'Sans-Serif';
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+  color: $darkgrey;
+  text-align: left;
+  margin-bottom: $small;
+}
+h3{
+  font-family: "Open Sans", 'Sans-Serif';
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: $darkgrey;
+  margin-bottom: $tiny;
+}
+p {
+  margin: 0;
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  color: $darkgrey;
+  font-weight: 600;
+
+}
+button {
+  cursor: pointer;
+  border: none;
+  padding: $tiny $small;
+  font-size: 0.875rem;;
+}

@@ -1,0 +1,51 @@
+@import "../styles/global.scss";
+
+.pagecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: $basic;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    .element {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        position: relative;
+        .elementcontent {
+            padding: 0 0 0  $tiny;
+            min-height: $small;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            border: 1px solid $grey;
+            gap: $small;
+            margin-bottom: $small;
+            .labelcontainer {
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                width: 200px;
+            }
+            
+        }
+    }
+}
+
+input {
+    font-size: 16px;
+    padding: 0.3rem 0.6rem;
+    min-width: $basic;
+    width: $large;
+    margin: $tiny 0;
+}
+
+
+

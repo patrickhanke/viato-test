@@ -1,0 +1,10 @@
+@import '/src/styles/global.scss';
+
+.button-zimmer {
+    background-color: $darkgrey;
+    color: $white;
+    transition: background-color 0.2s ease;
+}
+.selected {
+    background-color: $primary-color
+}
